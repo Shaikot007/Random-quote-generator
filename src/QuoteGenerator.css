@@ -1,0 +1,146 @@
+.QuoteGenerator {
+  margin: auto;
+  background: url(http://images.all-free-download.com/images/graphiclarge/old_paper_background_hd_picture_2_169574.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+#wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+#quote-box {
+  height: auto;
+  width: 40%;
+  margin: auto;
+}
+
+#quote-box h1 {
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 4px 4px 4px #333;
+}
+
+#text {
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 4px 4px 4px #333;
+  text-align: justify;
+}
+
+#author {
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 4px 4px 4px #333;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.SocialButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#tweet-quote {
+  text-shadow: 4px 4px 4px #333;
+  float: left;
+  margin: auto 1% auto 1%;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+#tweet-quote:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.10);
+}
+
+#tweet-quote a {
+  text-decoration: none;
+}
+
+.btn-tweeter {
+  color: #55ACEE;
+}
+
+#tumblr-quote {
+  text-shadow: 4px 4px 4px #333;
+  float: left;
+  margin: auto 1% auto 1%;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+#tumblr-quote:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.10);
+}
+
+.btn-tumblr {
+  color: #395976;
+}
+
+.SocialButton button {
+  outline: none;
+}
+
+#new-quote {
+  margin: 5% 1% 5% auto;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  float: right;
+  background-image: url(http://images.all-free-download.com/images/graphiclarge/old_paper_background_hd_picture_2_169574.jpg);
+  background-position: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  text-shadow: 4px 4px 4px #333;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #333;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+  border: 2px solid black;
+}
+
+#new-quote:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}
+
+footer {
+  height: auto;
+  margin: 5% auto 1% auto;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 4px 4px 4px #333;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+  #quote-box { width: 80%; }
+} 
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #quote-box { width: 80%; }
+}
