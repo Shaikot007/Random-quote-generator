@@ -9,28 +9,30 @@ class QuoteGenerator extends Component {
       author: ""
     }
   }
+
   componentDidMount() {
     this.fetchData();
-  }
-  fetchData = () => { 
+  };
+
+  fetchData = () => {
     fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com", {
       method: "POST",
-      headers:{
+      headers: {
         'X-RapidAPI-Host': 'andruxnet-random-famous-quotes.p.rapidapi.com',
         'X-RapidAPI-Key': 'azDfMNiayumshLNm8LqjF9dsMTkcp1iw8Eljsn4teh0209W9ZE',
         'Content-Type': 'application/x-www-form-urlencoded'
       }
     })
-    .then(response => response.json())
-    .then(data => {
-      // console.log(JSON.stringify(data));
+      .then(response => response.json())
+      .then(data => {
         this.setState({
           quote: data[0].quote,
           author: data[0].author
         })
       }
-    )
-  }
+      )
+  };
+
   render() {
     return (
       <Fragment>
@@ -39,7 +41,7 @@ class QuoteGenerator extends Component {
             <header id="quote-box">
               <h1>Quote Machine</h1>
               <div id="text">
-                " {this.state.quote} " 
+                " {this.state.quote} "
               </div>
               <div id="author">
                 - {this.state.author}
@@ -62,6 +64,6 @@ class QuoteGenerator extends Component {
       </Fragment>
     );
   }
-}
+};
 
 export default QuoteGenerator;

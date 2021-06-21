@@ -139,7 +139,7 @@ footer p a {
 
 @media only screen and (min-width: 240px) and (max-width: 480px) {
   #quote-box { width: 80%; }
-} 
+}
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   #quote-box { width: 80%; }
